@@ -1,0 +1,17 @@
+{
+  "name": "nuclear-report",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parse": "node --harmony-async-await index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "0.22.0",
+    "pdf-text-extract": "1.4.1",
+    "request": "2.81.0"
+  }
+}

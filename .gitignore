@@ -1,0 +1,15 @@
+// Blog
+blog/
+
+// Documents
+*.pdf
+*.txt
+
+// Logs
+*.log
+
+// Platform files
+.DS_Store
+
+// Modules
+node_modules
