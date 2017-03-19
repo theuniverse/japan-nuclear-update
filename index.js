@@ -90,7 +90,7 @@ async function exec_sync(command) {
     }
   });
 
-  const finalTitle = [start, end].join('-') + ': ' + title.join('; ');
+  const finalTitle = start + ': ' + title.join('; ');
   const finalContent = table.join('\n');
 
   const created = await exec_sync('cd blog && hexo new "' + finalTitle + '"');
