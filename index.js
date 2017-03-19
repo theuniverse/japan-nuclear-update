@@ -77,13 +77,13 @@ async function exec_sync(command) {
 
   const [, start, end] = link.replace('.pdf', '').split('_');
   let title = [];
-  let table = ['|  | 都道府县 | 海拔1m处预计值(𝜇𝘚𝘷⧸ℎ) |\n|---|---|---|'];
+  let table = ['|  | 都道府县 | 海拔1m处预计值(uSv/h) |\n|---|---|---|'];
   usefulLines.forEach(line => {
     const [i, name, , , , value1, value2] = line;
     const index = parseInt(i, 10);
     const value = parseFloat(value2) || parseFloat(value1) || '无测量值';
     if ([1, 13, 27, 47].includes(index)) {
-      title.push([name, value + '𝜇𝘚𝘷⧸ℎ'].join(' '));
+      title.push([name, value + 'uSv/h'].join(' '));
       table.push('| ' + [index, '**' + name + '**', value].join(' | ') + ' |');
     } else {
       table.push('| ' + [index, name, value].join(' | ') + ' |');
